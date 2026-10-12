@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="content" method="upgrade">
+	<name>PLG_CONTENT_ITEMS</name>
+	<version>1.0.0</version>
+	<author>Dev</author>
+	<creationDate>2026-10</creationDate>
+	<description>PLG_CONTENT_ITEMS_DESCRIPTION</description>
+	<namespace path="src">Dev\Plugin\Content\Items</namespace>
+	<files>
+		<folder plugin="items">services</folder>
+		<folder>src</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_content_items.ini</language>
+		<language tag="en-GB">language/en-GB/plg_content_items.sys.ini</language>
+		<language tag="pl-PL">language/pl-PL/plg_content_items.ini</language>
+		<language tag="pl-PL">language/pl-PL/plg_content_items.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="show_count"
+					type="radio"
+					label="PLG_CONTENT_ITEMS_FIELD_SHOW_COUNT_LABEL"
+					description="PLG_CONTENT_ITEMS_FIELD_SHOW_COUNT_DESC"
+					default="1"
+					layout="joomla.form.field.radio.switcher"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

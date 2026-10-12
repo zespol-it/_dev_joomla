@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" method="upgrade">
+	<name>COM_HELLO_TITLE</name>
+	<creationDate>2026-10</creationDate>
+	<author>Dev</author>
+	<license>GPL v2 or later</license>
+	<version>1.0.0</version>
+	<description>COM_HELLO_DESCRIPTION</description>
+	<element>com_hello</element>
+	<namespace path="src">Dev\Component\Hello</namespace>
+	<files folder="components/com_hello">
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	<administration>
+		<menu link="option=com_hello">COM_HELLO_MENU</menu>
+		<files folder="administrator/components/com_hello">
+			<folder>services</folder>
+		</files>
+		<languages folder="administrator/components/com_hello/language">
+			<language tag="en-GB">en-GB/com_hello.ini</language>
+			<language tag="en-GB">en-GB/com_hello.sys.ini</language>
+			<language tag="pl-PL">pl-PL/com_hello.ini</language>
+			<language tag="pl-PL">pl-PL/com_hello.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

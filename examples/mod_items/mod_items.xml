@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" method="upgrade">
+	<name>MOD_ITEMS_NAME</name>
+	<version>1.0.0</version>
+	<author>Dev</author>
+	<creationDate>2026-10</creationDate>
+	<description>MOD_ITEMS_DESCRIPTION</description>
+	<namespace path="src">Dev\Module\Items</namespace>
+	<files>
+		<folder module="mod_items">services</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/mod_items.ini</language>
+		<language tag="en-GB">language/en-GB/mod_items.sys.ini</language>
+		<language tag="pl-PL">language/pl-PL/mod_items.ini</language>
+		<language tag="pl-PL">language/pl-PL/mod_items.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="count"
+					type="number"
+					label="MOD_ITEMS_FIELD_COUNT_LABEL"
+					description="MOD_ITEMS_FIELD_COUNT_DESC"
+					default="5"
+					min="1"
+					max="50"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

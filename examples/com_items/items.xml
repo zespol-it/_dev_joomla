@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" method="upgrade">
+	<name>COM_ITEMS_TITLE</name>
+	<creationDate>2026-10</creationDate>
+	<author>Dev</author>
+	<license>GPL v2 or later</license>
+	<version>1.0.0</version>
+	<description>COM_ITEMS_DESCRIPTION</description>
+	<element>com_items</element>
+	<namespace path="src">Dev\Component\Items</namespace>
+	<files folder="components/com_items">
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	<administration>
+		<menu link="option=com_items">COM_ITEMS_MENU</menu>
+		<submenu>
+			<menu link="option=com_items&amp;view=items">COM_ITEMS_MENU_ITEMS</menu>
+		</submenu>
+		<files folder="administrator/components/com_items">
+			<folder>forms</folder>
+			<folder>services</folder>
+			<folder>sql</folder>
+			<folder>src</folder>
+			<folder>tmpl</folder>
+		</files>
+		<languages folder="administrator/components/com_items/language">
+			<language tag="en-GB">en-GB/com_items.ini</language>
+			<language tag="en-GB">en-GB/com_items.sys.ini</language>
+			<language tag="pl-PL">pl-PL/com_items.ini</language>
+			<language tag="pl-PL">pl-PL/com_items.sys.ini</language>
+		</languages>
+	</administration>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+</extension>

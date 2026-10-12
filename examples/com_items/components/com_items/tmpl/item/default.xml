@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_ITEMS_ITEM_MENUITEM_TITLE">
+		<message>COM_ITEMS_ITEM_MENUITEM_DESCRIPTION</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field
+				name="id"
+				type="sql"
+				label="COM_ITEMS_ITEM_FIELD_SELECT_LABEL"
+				description="COM_ITEMS_ITEM_FIELD_SELECT_DESC"
+				query="SELECT id, title FROM #__items WHERE state = 1"
+				key_field="id"
+				value_field="title"
+			/>
+		</fieldset>
+	</fields>
+</metadata>
